@@ -11,7 +11,7 @@
 ![form](.github/preview.gif "Desktop")
 
 ## About
-<hr>
+
 
 Project developed during phase 3 - Advancing in HTML and CSS, in the explorer course [Rocketseat](https://github.com/Rocketseat).
 
