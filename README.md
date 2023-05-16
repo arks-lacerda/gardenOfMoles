@@ -42,7 +42,7 @@ Windows:
 git clone https://github.com/
 ```
 
-- [Access the finished project, online](https://arks-lacerda.github.io/gradenOfMoles/)
+- [Access the finished project, online](https://arks-lacerda.github.io/gardenOfMoles/)
 
 ### Contact
 
