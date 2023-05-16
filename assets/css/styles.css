@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --delay-02: .6s;
+  --duration: 1.5s;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/background.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.all-holes {
+  height: 60%;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  gap: 4rem;
+}
+
+.hole {
+  width: 15rem;
+  background-image: url(../images/holes.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  transition: all .4s ease; 
+}
+
+.moles {
+  transition: all .4s ease; 
+}
+
+.time, .score {
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.time {
+  left: 20px;
+}
+.score {
+  right: 20px;
+}
+
+/* ===========  Animations  =========== */
+.all-holes .moles {
+  animation: showMoles var(--duration) ease-in-out var(--delay-02);
+}
+
+/* ===========  Keyframes  =========== */
+@keyframes showMoles {
+  0% {
+    background: url("../images/holes.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  17% {
+    background: url("../images/mole1.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  33% {
+    background: url("../images/mole2.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  50% {
+    background: url("../images/mole3.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  67% {
+    background: url("../images/mole4.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  83% {
+    background: url("../images/mole5.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  100% {
+    background: url("../images/holes.svg") no-repeat center center;
+    background-size: contain;
+
+  }
+}
+/* ===========  Responsive  =========== */
+@media (max-width: 991px) {
+  .all-holes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+}
+
+@media (max-width: 665px) {
+  .all-holes {
+    width: fit-content;
+  }
+}
+
+
+
+
